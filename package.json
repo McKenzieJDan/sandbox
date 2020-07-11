@@ -1,0 +1,23 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/McKenzieJDan/sandbox.git",
+  "author": "Daniel McKenzie <mckenziejdan@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js --ext .js",
+    "lint:fix": "yarn run lint --fix",
+    "lint:all": "yarn run lint ./",
+    "lint:all:fix": "yarn run lint:fix ./"
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "7.4.x",
+    "eslint-config-prettier": "6.11.x",
+    "eslint-plugin-prettier": "3.1.x",
+    "prettier": "2.0.x"
+  }
+}
